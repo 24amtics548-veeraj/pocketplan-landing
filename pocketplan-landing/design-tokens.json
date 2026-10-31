@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "projectName": "PocketPlan – Responsive Product Landing Page",
+    "course": "UI/UX using Figma (IPS)",
+    "studentName": "Waghela Veeraj",
+    "enrollmentNo": "202403103510548",
+    "gridSystem": "8-Point Grid System",
+    "desktopFrame": {"width": 1440, "contentMaxWidth": 1200, "columns": 12, "gutter": 24, "margin": 120},
+    "mobileFrame": {"width": 375, "contentMaxWidth": 335, "columns": 4, "gutter": 16, "margin": 20}
+  },
+  "colorStyles": {
+    "primary": {
+      "Plum/950": {"hex": "#140A26", "use": "Dark surface, phone mockup chassis"},
+      "Plum/900": {"hex": "#2D1B4E", "use": "Primary headings, dark cards, CTA banners"},
+      "Plum/800": {"hex": "#3B235E", "use": "Elevated dark cards, interactive borders"},
+      "Plum/700": {"hex": "#4A3175", "use": "Body copy on light backgrounds, muted text"},
+      "Plum/100": {"hex": "#EDE6F8", "use": "Pill backgrounds, light borders"}
+    },
+    "accent": {
+      "Coral/600": {"hex": "#E64534", "use": "Button hover state, high-contrast numbers"},
+      "Coral/500": {"hex": "#FF5745", "use": "Primary CTA buttons, ring progress, brand icons"},
+      "Coral/100": {"hex": "#FFEAE6", "use": "Subtle notification highlights, chip backgrounds"}
+    },
+    "neutralsAndTints": {
+      "Lilac/100": {"hex": "#F4EFFF", "use": "Hero section background, feature card background"},
+      "Lilac/50":  {"hex": "#FAF7FF", "use": "Secondary section backgrounds, result boxes"},
+      "Sky/200":   {"hex": "#BFE3FF", "use": "Accent feature cards, decorative radial blurs"},
+      "Sky/100":   {"hex": "#EAF5FF", "use": "Soft card tints, badges"},
+      "Ink/900":   {"hex": "#130C24", "use": "Footer background, high contrast dark copy"},
+      "White":     {"hex": "#FFFFFF", "use": "Page background, card background, button text"}
+    }
+  },
+  "typographyStyles": {
+    "Display/H1": {
+      "fontFamily": "Sora",
+      "fontWeight": "Bold (700)",
+      "fontSize": 56,
+      "lineHeight": 62,
+      "letterSpacing": "-0.035em",
+      "use": "Hero headline"
+    },
+    "Display/H2": {
+      "fontFamily": "Sora",
+      "fontWeight": "Bold (700)",
+      "fontSize": 36,
+      "lineHeight": 44,
+      "letterSpacing": "-0.025em",
+      "use": "Section titles, CTA banner heading"
+    },
+    "Heading/H3": {
+      "fontFamily": "Sora",
+      "fontWeight": "SemiBold (600)",
+      "fontSize": 20,
+      "lineHeight": 28,
+      "letterSpacing": "-0.015em",
+      "use": "Feature card titles, step headings"
+    },
+    "Body/Large": {
+      "fontFamily": "Manrope",
+      "fontWeight": "Medium (500)",
+      "fontSize": 18,
+      "lineHeight": 28,
+      "letterSpacing": "normal",
+      "use": "Hero subtitle, section descriptions"
+    },
+    "Body/Regular": {
+      "fontFamily": "Manrope",
+      "fontWeight": "Medium (500)",
+      "fontSize": 16,
+      "lineHeight": 24,
+      "letterSpacing": "normal",
+      "use": "Card body copy, descriptions, table body"
+    },
+    "Button/Default": {
+      "fontFamily": "Manrope",
+      "fontWeight": "ExtraBold (800)",
+      "fontSize": 16,
+      "lineHeight": 20,
+      "letterSpacing": "0.01em",
+      "use": "Primary and secondary interactive buttons"
+    },
+    "Caption/Small": {
+      "fontFamily": "Manrope",
+      "fontWeight": "SemiBold (600)",
+      "fontSize": 14,
+      "lineHeight": 20,
+      "letterSpacing": "0.02em",
+      "use": "Tags, trust bar badges, metadata"
+    }
+  },
+  "spacingScale": {
+    "unit": "8px",
+    "values": {
+      "s-1": 4,
+      "s-2": 8,
+      "s-3": 12,
+      "s-4": 16,
+      "s-5": 24,
+      "s-6": 32,
+      "s-7": 48,
+      "s-8": 64,
+      "s-9": 96
+    }
+  },
+  "radii": {
+    "small": 8,
+    "button": 14,
+    "card": 20,
+    "largeCard": 28,
+    "phone": 36,
+    "pill": 9999
+  },
+  "elevations": {
+    "sm": "0 2px 8px rgba(20, 10, 38, 0.04)",
+    "md": "0 12px 32px -4px rgba(45, 27, 78, 0.08)",
+    "lg": "0 24px 48px -8px rgba(45, 27, 78, 0.14)",
+    "glow": "0 16px 36px rgba(255, 87, 69, 0.28)"
+  },
+  "reusableComponents": [
+    {
+      "name": "Button",
+      "variants": ["Primary (Coral)", "Secondary (Plum Outline)", "White (Elevated)"],
+      "sizes": ["Default (16px / 28px padding)", "Small (10px / 20px padding)"],
+      "autoLayout": {
+        "direction": "Horizontal",
+        "alignment": "Center",
+        "padding": {"top": 16, "bottom": 16, "left": 28, "right": 28},
+        "gap": 8,
+        "cornerRadius": 14
+      }
+    },
+    {
+      "name": "Header Navbar",
+      "autoLayout": {
+        "direction": "Horizontal",
+        "alignment": "Space Between / Center",
+        "height": 76,
+        "padding": {"left": 24, "right": 24},
+        "resizing": "Fill Container"
+      }
+    },
+    {
+      "name": "Interactive Slider Card",
+      "autoLayout": {
+        "direction": "Vertical",
+        "gap": 20,
+        "padding": {"top": 28, "bottom": 28, "left": 28, "right": 28},
+        "cornerRadius": 28,
+        "resizing": "Hug Contents"
+      }
+    },
+    {
+      "name": "Transaction Row",
+      "autoLayout": {
+        "direction": "Horizontal",
+        "alignment": "Space Between / Center",
+        "padding": {"top": 10, "bottom": 10, "left": 12, "right": 12},
+        "cornerRadius": 14,
+        "resizing": "Fill Container"
+      }
+    },
+    {
+      "name": "Feature Card",
+      "variants": ["Lilac Theme", "Sky Theme", "Plum Dark Theme", "White Standard"],
+      "autoLayout": {
+        "direction": "Vertical",
+        "gap": 16,
+        "padding": {"top": 32, "bottom": 32, "left": 28, "right": 28},
+        "cornerRadius": 28,
+        "resizing": "Fill Container"
+      }
+    }
+  ]
+}
